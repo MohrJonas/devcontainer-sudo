@@ -1,0 +1,3 @@
+#!/bin/ash
+
+. ./common.sh

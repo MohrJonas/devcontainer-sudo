@@ -9,19 +9,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      matrix:
-        baseImage:
-          - debian:latest
-          - fedora:latest
-          - alpine:latest
-          - archlinux:latest
     steps:
       - uses: actions/checkout@v4
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
-      - name: "Generating tests for '${{ matrix.baseImage }}'"
+      - name: "Running tests"
         run: devcontainer features test .

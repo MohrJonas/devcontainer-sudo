@@ -1,5 +1,3 @@
-#!/bin/bash
-
 set -e
 
 # Make sure directory and files exists
