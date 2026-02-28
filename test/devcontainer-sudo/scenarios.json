@@ -1,0 +1,28 @@
+{
+    "debian": {
+        "image": "debian:latest",
+        "features": {
+            "devcontainer-sudo": {}
+        }
+    },
+    "fedora": {
+        "image": "fedora:latest",
+        "features": {
+            "devcontainer-sudo": {}
+        },
+        "postCreateCommand": "dnf update -y && dnf install -y util-linux"
+    },
+    "alpine": {
+        "image": "alpine:latest",
+        "features": {
+            "devcontainer-sudo": {}
+        },
+        "postCreateCommand": "apk add bash"
+    },
+    "archlinux": {
+        "image": "archlinux:latest",
+        "features": {
+            "devcontainer-sudo": {}
+        }
+    }
+}
