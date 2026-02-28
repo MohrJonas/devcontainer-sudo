@@ -15,4 +15,4 @@ useradd -g 9999 -u 9999 testuser
 echo 'testuser:testuser' | chpasswd
 
 # Make sure testuser can use sudo without password prompt
-runuser -u testuser -c 'sudo true'
+runuser -u testuser -- sudo true
