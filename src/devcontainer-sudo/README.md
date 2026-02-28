@@ -1,5 +1,5 @@
 
-# Devcontainer-sudo
+# Devcontainer sudo (devcontainer-sudo)
 
 Install sudo and allow users to run commands
 
@@ -7,9 +7,7 @@ Install sudo and allow users to run commands
 
 ```json
 "features": {
-    "ghcr.io/mohrjonas/devcontainer-sudo:1": {
-        "user": "ALL"
-    }
+    "ghcr.io/MohrJonas/devcontainer-sudo/devcontainer-sudo:1": {}
 }
 ```
 
@@ -17,4 +15,10 @@ Install sudo and allow users to run commands
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| user | The user or group to allow passwordless sudo to | string | ALL |
+| user | User to allow passwordless sudo for | string | ALL |
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/MohrJonas/devcontainer-sudo/blob/main/src/devcontainer-sudo/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
