@@ -1,0 +1,16 @@
+{
+    "name": "Devcontainer sudo",
+    "id": "devcontainer-sudo",
+    "version": "1.0.0",
+    "description": "Install sudo and allow users to run commands",
+    "options": {
+        "user": {
+            "type": "string",
+            "default": "ALL",
+            "description": "User to allow passwordless sudo for"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
