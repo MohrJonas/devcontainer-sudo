@@ -24,7 +24,7 @@ install_via_apk()
 
 install_via_pacman()
 {
-    pacman -Syyu
+    pacman -Sy
     pacman -S sudo --noconfirm
 }
 
