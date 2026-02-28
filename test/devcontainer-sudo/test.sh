@@ -7,7 +7,7 @@ test -d /etc/sudoers.d
 test -f /etc/sudoers.d/devcontainer-sudo
 
 # Make sure sudo binary exists
-which sudo
+sudo --version
 
 # Setup test user
 groupadd -g 9999 testuser
